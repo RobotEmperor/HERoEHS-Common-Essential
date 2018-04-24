@@ -1,0 +1,43 @@
+pose_0:
+  l_elbow_pitch: -70.40039054455583
+  l_shoulder_pitch: 86.67708960418669
+  l_shoulder_roll: -3.164062496384532
+  l_shoulder_yaw: 29.28187588251517
+pose_1:
+  l_elbow_pitch: -65.83007804977817
+  l_shoulder_pitch: 87.73241131202985
+  l_shoulder_roll: -19.98046872716899
+  l_shoulder_yaw: -17.92968747951235
+pose_2:
+  l_elbow_pitch: -70.40039054455583
+  l_shoulder_pitch: 86.67708960418669
+  l_shoulder_roll: -3.164062496384532
+  l_shoulder_yaw: 29.28187588251517
+pose_3:
+  l_elbow_pitch: -65.83007804977817
+  l_shoulder_pitch: 87.73241131202985
+  l_shoulder_roll: -19.98046872716899
+  l_shoulder_yaw: -17.92968747951235
+pose_4:
+  l_elbow_pitch: -70.40039054455583
+  l_shoulder_pitch: 86.67708960418669
+  l_shoulder_roll: -3.164062496384532
+  l_shoulder_yaw: 29.28187588251517
+pose_5:
+  l_elbow_pitch: -65.83007804977817
+  l_shoulder_pitch: 87.73241131202985
+  l_shoulder_roll: -19.98046872716899
+  l_shoulder_yaw: -17.92968747951235
+pose_6:
+  l_elbow_pitch: -33.57421871163587
+  l_shoulder_pitch: 40.27811184934811
+  l_shoulder_roll: -5.917968743237735
+  l_shoulder_yaw: 20.40058620043099
+
+pose_time_0: 2
+pose_time_1: 0.65
+pose_time_2: 0.65
+pose_time_3: 0.65
+pose_time_4: 0.65
+pose_time_5: 0.65
+pose_time_6: 3

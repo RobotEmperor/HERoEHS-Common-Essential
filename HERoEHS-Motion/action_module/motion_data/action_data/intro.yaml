@@ -1,0 +1,9 @@
+action:
+  0 : arm_left_intro
+  1 : head_intro
+
+
+time: 
+  0 : 0.7
+  1 : 0.7
+

@@ -1,0 +1,13 @@
+pose_0:
+  r_elbow_pitch: 59.35515381590915
+  r_shoulder_pitch: -37.87466186061995
+  r_shoulder_roll: 6.154347111170174
+  r_shoulder_yaw: -69.25781242086141
+pose_1:
+  r_elbow_pitch: 29.01807519888891
+  r_shoulder_pitch: -41.77817854263371
+  r_shoulder_roll: 5.099316177826715
+  r_shoulder_yaw: -17.92968747951235
+
+pose_time_0: 5
+pose_time_1: 2

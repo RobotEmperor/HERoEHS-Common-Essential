@@ -1,0 +1,9 @@
+string file_name
+string command
+string[] part
+float64 time
+
+---
+
+string file_name_save
+string result

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<launch>    
+
+    <param name="gazebo"                   value="true"     type="bool"/>
+    <param name="gazebo_robot_name"        value="diana_soccer" />
+
+    <param name="offset_table"             value="$(find heroehs_manager)/config/offset.yaml"/>
+    <param name="robot_file_path"          value="$(find heroehs_manager)/config/robot.robot"/>
+    <param name="init_file_path"           value="$(find heroehs_manager)/config/dxl_init.yaml"/>
+      
+    <!-- ski_robot Manager -->
+    <node name="heroehs_manager_node" pkg="heroehs_manager" type="heroehs_manager_node" output="screen"/>
+  
+</launch>

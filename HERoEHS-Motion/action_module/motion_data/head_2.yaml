@@ -1,0 +1,53 @@
+pose_0:
+  head_pitch: -11.95312498634156
+  head_roll: 2.46213971384512
+  head_yaw: -0.9843749996585283
+pose_1:
+  head_pitch: 13.36590130373065
+  head_roll: 2.901807519888892
+  head_yaw: -1.195312499585356
+pose_2:
+  head_pitch: 8.001954069996639
+  head_roll: 9.936492416589234
+  head_yaw: 15.01807522198076
+pose_3:
+  head_pitch: 2.374206152636366
+  head_roll: -7.119140616865196
+  head_yaw: -12.04687499165833
+pose_4:
+  head_pitch: -1.669921873091836
+  head_roll: 2.901807519888892
+  head_yaw: -2.531249999121929
+pose_5:
+  head_pitch: 8.881289682084182
+  head_roll: 4.660478744063978
+  head_yaw: -15.85546873825581
+pose_6:
+  head_pitch: -8.701171865057461
+  head_roll: 4.044943815602697
+  head_yaw: -18.52734373732896
+pose_7:
+  head_pitch: 7.826086947579133
+  head_roll: 4.044943815602697
+  head_yaw: -18.42187498736554
+pose_8:
+  head_pitch: 4.92427942769024
+  head_roll: 3.957010254393943
+  head_yaw: -4.324218748499963
+pose_9:
+  head_pitch: -5.800781243371642
+  head_roll: 3.69320957076768
+  head_yaw: -1.828124999365838
+
+pose_time_0: 1.5
+pose_time_1: 1.5
+pose_time_2: 2
+pose_time_3: 2
+
+pose_time_4: 2
+pose_time_5: 2
+
+pose_time_6: 1
+pose_time_7: 1
+pose_time_8: 2
+pose_time_9: 2

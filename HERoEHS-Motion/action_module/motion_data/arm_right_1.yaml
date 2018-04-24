@@ -1,0 +1,23 @@
+pose_0:
+  l_elbow_pitch: -34.80468746022984
+  l_shoulder_pitch: 3.51773902614394
+  l_shoulder_roll: -8.406249998393125
+  l_shoulder_yaw: -0.08789062489957032
+  r_elbow_pitch: 73.95212497656235
+  r_shoulder_pitch: -87.1082055977304
+  r_shoulder_roll: 5.35937498473469
+  r_shoulder_yaw: -81.38671865700212
+pose_1:
+  l_elbow_pitch: -34.80468746022984
+  l_shoulder_pitch: 3.51773902614394
+  l_shoulder_roll: -7.406249998393125
+  l_shoulder_yaw: -0.08789062489957032
+  r_elbow_pitch: 27.87493890317511
+  r_shoulder_pitch: -6.857529306240382
+  r_shoulder_roll: 7.395962222264409
+  r_shoulder_yaw: -8.876953114856603
+
+pose_time_0: 2
+pose_time_1: 2
+
+

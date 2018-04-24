@@ -1,0 +1,117 @@
+pose_0:
+  l_elbow_pitch: -48.77929681926152
+  l_shoulder_pitch: 35.03668070039364
+  l_shoulder_roll: -32.05078121337664
+  l_shoulder_yaw: -19.42382810280504
+  r_elbow_pitch: 48.62725934844111
+  r_shoulder_pitch: -37.17132552151838
+  r_shoulder_roll: 25.96548352617511
+  r_shoulder_yaw: 27.52320465834009
+pose_1:
+  l_elbow_pitch: -48.77929681926152
+  l_shoulder_pitch: 35.03668070039364
+  l_shoulder_roll: -32.05078121337664
+  l_shoulder_yaw: -19.42382810280504
+  r_elbow_pitch: 48.62725934844111
+  r_shoulder_pitch: -37.17132552151838
+  r_shoulder_roll: 25.96548352617511
+  r_shoulder_yaw: 27.52320465834009
+
+
+pose_2:
+  l_elbow_pitch: -71.80664054294895
+  l_shoulder_pitch: 36.05682501797538
+  l_shoulder_roll: -27.94921871806336
+  l_shoulder_yaw: -49.21874994375938
+  r_elbow_pitch: 88.37322901479806
+  r_shoulder_pitch: -48.17853922845807
+  r_shoulder_roll: 5.988281246585391
+  r_shoulder_yaw: -63.80859367708806
+
+pose_3:
+  l_elbow_pitch: -46.14257807227442
+  l_shoulder_pitch: 82.27991582150676
+  l_shoulder_roll: -7.515624995982813
+  l_shoulder_yaw: 40.88910596207074
+  r_elbow_pitch: 38.95456761547815
+  r_shoulder_pitch: -84.96302976347057
+  r_shoulder_roll: 5.696190162988838
+  r_shoulder_yaw: -48.69140619436196
+
+pose_4:
+  l_elbow_pitch: -46.14257807227442
+  l_shoulder_pitch: 82.27991582150676
+  l_shoulder_roll: -7.515624995982813
+  l_shoulder_yaw: 40.88910596207074
+  r_elbow_pitch: 38.95456761547815
+  r_shoulder_pitch: -84.96302976347057
+  r_shoulder_roll: 5.696190162988838
+  r_shoulder_yaw: -48.69140619436196
+
+
+pose_5:
+  l_elbow_pitch: -46.75781244657141
+  l_shoulder_pitch: 35.77540589588386
+  l_shoulder_roll: -7.806451606268388
+  l_shoulder_yaw: 55.92574492876772
+  r_elbow_pitch: 36.22862721800676
+  r_shoulder_pitch: -38.71866546754185
+  r_shoulder_roll: 5.964843739756173
+  r_shoulder_yaw: -62.05078117909665
+pose_6:
+  l_elbow_pitch: -50.00976556785551
+  l_shoulder_pitch: 35.14221287117796
+  l_shoulder_roll: -6.806451606268388
+  l_shoulder_yaw: 55.48607712272396
+  r_elbow_pitch: 50.91353193986873
+  r_shoulder_pitch: -34.53381424988746
+  r_shoulder_roll: 21.86258545206167
+  r_shoulder_yaw: 16.17977526241079
+pose_7:
+  l_elbow_pitch: -72.68554679194466
+  l_shoulder_pitch: 36.58448587189697
+  l_shoulder_roll: -24.19921872234836
+  l_shoulder_yaw: -33.57421871163587
+  r_elbow_pitch: 51.17733262349499
+  r_shoulder_pitch: -33.4788097412351
+  r_shoulder_roll: 23.38651902244666
+  r_shoulder_yaw: 18.4660478538384
+pose_8:
+  l_elbow_pitch: -68.20312492206658
+  l_shoulder_pitch: 33.80547204124326
+  l_shoulder_roll: -7.269794711958006
+  l_shoulder_yaw: 56.62921341843776
+  r_elbow_pitch: 57.50854903052531
+  r_shoulder_pitch: -38.40216411494614
+  r_shoulder_roll: 6.40234373011492
+  r_shoulder_yaw: -63.89648430198762
+pose_9:
+  l_elbow_pitch: -84.19921865378836
+  l_shoulder_pitch: 37.28803367712577
+  l_shoulder_roll: -6.982404685246218
+  l_shoulder_yaw: -39.46289057990708
+  r_elbow_pitch: 62.52076201942428
+  r_shoulder_pitch: -38.54283138276645
+  r_shoulder_roll: 5.613281240157892
+  r_shoulder_yaw: 30.776746423064
+pose_10:
+  l_elbow_pitch: -71.89453116784853
+  l_shoulder_pitch: 37.28803367712577
+  l_shoulder_roll: -6.845747790935838
+  l_shoulder_yaw: 57.15681478569029
+  r_elbow_pitch: 66.21397159019197
+  r_shoulder_pitch: -40.54733994920594
+  r_shoulder_roll: 5.933593747790547
+  r_shoulder_yaw: -60.7324218056031
+
+pose_time_0: 2
+pose_time_1: 5.3
+pose_time_2: 1.5
+pose_time_3: 1
+pose_time_4: 4
+pose_time_5: 1
+pose_time_6: 1.5
+pose_time_7: 1.5
+pose_time_8: 1
+pose_time_9: 1
+pose_time_10: 1

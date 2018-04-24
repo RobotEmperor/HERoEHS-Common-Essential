@@ -1,0 +1,56 @@
+pose_0:
+  head_pitch: 0.1757812497991406
+  head_roll: 0.4396678060437714
+  head_yaw: 0.01562498473133
+pose_1:
+  head_pitch: 0.1757812497991406
+  head_roll: 0.4396678060437714
+  head_yaw: 0.01562498473133
+pose_2:
+  head_pitch: -0.1757812497991406
+  head_roll: 0.4396678060437714
+  head_yaw: -22.01562498473133
+pose_3:
+  head_pitch: 0.2638006836262629
+  head_roll: 0.3517342448350171
+  head_yaw: -1.265624999560965
+pose_4:
+  head_pitch: 12.66243281406062
+  head_roll: 0.5276013672525257
+  head_yaw: 0.6682950657183448
+pose_5:
+  head_pitch: -0.6152343742969922
+  head_roll: 0.61553492846128
+  head_yaw: 0.9145090372987876
+pose_6:
+  head_pitch: 1.84660478538384
+  head_roll: 0.2638006836262629
+  head_yaw: 18.38935025571582
+pose_7:
+  head_pitch: 2.110405469010103
+  head_roll: 0.3517342448350171
+  head_yaw: -17.50781248768263
+pose_8:
+  head_pitch: 2.813873958680137
+  head_roll: 0.5276013672525257
+  head_yaw: 0.4572545186493938
+pose_9:
+  head_pitch: -14.06249998393125
+  head_roll: -0.1757812497991406
+  head_yaw: -1.757812499390229
+pose_10:
+  head_pitch: 7.826086947579133
+  head_roll: 0.3517342448350171
+  head_yaw: -2.777343749036562
+
+pose_time_0: 1
+pose_time_1: 6.3
+pose_time_2: 1.5
+pose_time_3: 1
+pose_time_4: 4
+pose_time_5: 1
+pose_time_6: 1.5
+pose_time_7: 1.5
+pose_time_8: 1
+pose_time_9: 1
+pose_time_10: 1

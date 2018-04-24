@@ -1,0 +1,17 @@
+pose_0:
+  head_pitch: 7.914020508787885
+  head_roll: 0.1758671224175086
+  head_yaw: 19.48607717936648
+pose_1:
+  head_pitch: 8.617488998457921
+  head_roll: 0.4396678060437714
+  head_yaw: -22.39453124223152
+pose_2:
+  head_pitch: 2.110405469010103
+  head_roll: 0.4396678060437714
+  head_yaw: -1.476562499487792
+
+pose_time_0: 2
+pose_time_1: 3
+pose_time_2: 3
+

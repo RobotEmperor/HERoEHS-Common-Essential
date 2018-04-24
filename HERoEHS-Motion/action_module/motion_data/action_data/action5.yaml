@@ -1,0 +1,12 @@
+action:
+  0 : arm_left_5
+  1 : arm_right_5
+  2 : head_5
+  3 : waist_5
+
+
+time: 
+  0 : 0
+  1 : 1
+  2 : 0
+  3 : 0
