@@ -67,6 +67,8 @@ MainWindow::MainWindow(int argc, char** argv, QWidget *parent)
 	ui.id_line_edit->setText("0");
 	ui.motion_editor_id_line_edit->setText("0");
 	pose_num = 0;
+	action_num = 0;
+	action_num_str = "";
 }
 MainWindow::~MainWindow() {}
 
@@ -316,124 +318,67 @@ void MainWindow::on_motion_editor_initial_pose_button_clicked()
 
 void MainWindow::on_action_1_button_clicked()
 {
-	pose_num = 0;
-	qnode.editor_command_srv.request.file_name = "action1";
-	qnode.editor_command_srv.request.command = "action_play";
-	if(qnode.editor_command_cl.call(qnode.editor_command_srv))
-	{
-		qnode.log(qnode.Info, "Action Play command sended");
-	}
-	else
-	{
-		qnode.log(qnode.Error, "Check communication <SEND FAIL>");
-	}
-	qnode.log(qnode.Info, "action_play");
-	qnode.command_state_msg.data = "action_play";
-	qnode.command_state_pub.publish(qnode.command_state_msg);
-
-	qnode.sound_msg.data = "action1";
-	qnode.sound_pub.publish(qnode.sound_msg);
-
-	ui.motion_editor_pose_num_line_edit->setText(QString::number(pose_num));
-
+	send_action_command("action1");
 }
 void MainWindow::on_action_2_button_clicked()
 {
-	pose_num = 0;
-	qnode.editor_command_srv.request.file_name = "action2";
-	qnode.editor_command_srv.request.command = "action_play";
-	if(qnode.editor_command_cl.call(qnode.editor_command_srv))
-	{
-		qnode.log(qnode.Info, "Action Play command sended");
-	}
-	else
-	{
-		qnode.log(qnode.Error, "Check communication <SEND FAIL>");
-	}
-	qnode.log(qnode.Info, "action_play");
-	qnode.command_state_msg.data = "action_play";
-	qnode.command_state_pub.publish(qnode.command_state_msg);
-
-	qnode.sound_msg.data = "action2";
-	qnode.sound_pub.publish(qnode.sound_msg);
-
-	ui.motion_editor_pose_num_line_edit->setText(QString::number(pose_num));
-
+	send_action_command("action2");
 }
 void MainWindow::on_action_3_button_clicked()
 {
-	pose_num = 0;
-	qnode.editor_command_srv.request.file_name = "action3";
-	qnode.editor_command_srv.request.command = "action_play";
-	if(qnode.editor_command_cl.call(qnode.editor_command_srv))
-	{
-		qnode.log(qnode.Info, "Action Play command sended");
-	}
-	else
-	{
-		qnode.log(qnode.Error, "Check communication <SEND FAIL>");
-	}
-	qnode.log(qnode.Info, "action_play");
-	qnode.command_state_msg.data = "action_play";
-	qnode.command_state_pub.publish(qnode.command_state_msg);
-
-	qnode.sound_msg.data = "action3";
-	qnode.sound_pub.publish(qnode.sound_msg);
-
-	ui.motion_editor_pose_num_line_edit->setText(QString::number(pose_num));
-
+	send_action_command("action3");
 }
 void MainWindow::on_action_4_button_clicked()
 {
-	pose_num = 0;
-	qnode.editor_command_srv.request.file_name = "action4";
-	qnode.editor_command_srv.request.command = "action_play";
-	if(qnode.editor_command_cl.call(qnode.editor_command_srv))
-	{
-		qnode.log(qnode.Info, "Action Play command sended");
-	}
-	else
-	{
-		qnode.log(qnode.Error, "Check communication <SEND FAIL>");
-	}
-	qnode.log(qnode.Info, "action_play");
-	qnode.command_state_msg.data = "action_play";
-	qnode.command_state_pub.publish(qnode.command_state_msg);
-
-	qnode.sound_msg.data = "action4";
-	qnode.sound_pub.publish(qnode.sound_msg);
-
-	ui.motion_editor_pose_num_line_edit->setText(QString::number(pose_num));
-
+	send_action_command("action4");
 }
 void MainWindow::on_action_5_button_clicked()
 {
-	pose_num = 0;
-	qnode.editor_command_srv.request.file_name = "action5";
-	qnode.editor_command_srv.request.command = "action_play";
-	if(qnode.editor_command_cl.call(qnode.editor_command_srv))
-	{
-		qnode.log(qnode.Info, "Action Play command sended");
-	}
-	else
-	{
-		qnode.log(qnode.Error, "Check communication <SEND FAIL>");
-	}
-	qnode.log(qnode.Info, "action_play");
-	qnode.command_state_msg.data = "action_play";
-	qnode.command_state_pub.publish(qnode.command_state_msg);
-
-	qnode.sound_msg.data = "action5";
-	qnode.sound_pub.publish(qnode.sound_msg);
-
-	ui.motion_editor_pose_num_line_edit->setText(QString::number(pose_num));
-
+	send_action_command("action5");
 }
-void MainWindow::on_action_init_pose_button_clicked()
+void MainWindow::on_action_6_button_clicked()
+{
+	send_action_command("action6");
+}
+void MainWindow::on_action_7_button_clicked()
+{
+	send_action_command("action7");
+}
+void MainWindow::on_action_play_decrease_button_clicked()
+{
+	action_num = ui.action_number_line_edit -> text().toDouble();
+	action_num --;
+	if(action_num < 0)
+		action_num = 0;
+
+	ui.action_number_line_edit->setText(QString::number(action_num));
+}
+void MainWindow::on_action_play_increase_button_clicked()
+{
+	action_num = ui.action_number_line_edit -> text().toDouble();
+
+	action_num ++;
+
+	ui.action_number_line_edit->setText(QString::number(action_num));
+}
+void MainWindow::on_action_start_button_clicked()
+{
+	action_num = ui.action_number_line_edit -> text().toDouble();
+	ui.action_number_line_edit->setText(QString::number(action_num));
+
+	std::stringstream temp_str;
+	temp_str << action_num;
+	action_num_str = "action" + temp_str.str();
+
+	printf("%s", action_num_str.c_str());
+
+	send_action_command(action_num_str);
+}
+/*void MainWindow::on_action_init_pose_button_clicked()
 {
 	qnode.init_pose_msg.data ="init_pose";
 	qnode.init_pose_pub.publish(qnode.init_pose_msg);
-}
+}*/
 void MainWindow::on_editor_pause_button_2_clicked()
 {
 	qnode.action_command_msg.data ="pause";
@@ -570,6 +515,29 @@ void MainWindow::change_button(QString id_string, std::string type)
 	{
 		qnode.log(qnode.Error, "Check ID number <SEND FAIL>");
 	}
+}
+void MainWindow::send_action_command(std::string action_command_str)
+{
+	pose_num = 0;
+	qnode.editor_command_srv.request.file_name =  action_command_str;
+	qnode.editor_command_srv.request.command = "action_play";
+	if(qnode.editor_command_cl.call(qnode.editor_command_srv))
+	{
+		qnode.log(qnode.Info, "Action Play command sended");
+	}
+	else
+	{
+		qnode.log(qnode.Error, "Check communication <SEND FAIL>");
+	}
+	qnode.log(qnode.Info, "action_play");
+	qnode.command_state_msg.data = "action_play";
+	qnode.command_state_pub.publish(qnode.command_state_msg);
+
+	qnode.sound_msg.data =  action_command_str;
+	qnode.sound_pub.publish(qnode.sound_msg);
+
+	ui.motion_editor_pose_num_line_edit->setText(QString::number(pose_num));
+
 }
 void MainWindow::closeEvent(QCloseEvent *event)
 {

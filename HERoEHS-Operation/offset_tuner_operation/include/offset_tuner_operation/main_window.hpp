@@ -16,6 +16,7 @@
 #include <ros/package.h>
 #include <yaml-cpp/yaml.h>
 #include <QString>
+#include <sstream>
 #include "ui_main_window.h"
 #include "qnode.hpp"
 #endif
@@ -81,11 +82,20 @@ public:
 	void on_action_3_button_clicked();
 	void on_action_4_button_clicked();
 	void on_action_5_button_clicked();
+	void on_action_6_button_clicked();
+	void on_action_7_button_clicked();
 
-	void on_action_init_pose_button_clicked();
+	void on_action_play_decrease_button_clicked();
+	void on_action_play_increase_button_clicked();
+	void on_action_start_button_clicked();
+
+
+	//void on_action_init_pose_button_clicked();
 
 	void on_editor_pause_button_2_clicked();
 	void on_action_play_button_clicked();
+
+	void send_action_command(std::string action_command_str);
 
 
 	private:
@@ -102,6 +112,8 @@ public:
 	std::map<std::string, double> joint_name_to_offset_data;
 
 	int pose_num;
+	int action_num;
+	std::string action_num_str;
 };
 
 }  // namespace offset_tuner_operation
