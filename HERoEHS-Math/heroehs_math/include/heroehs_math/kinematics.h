@@ -54,6 +54,8 @@ public:
 	double head_point_on_origin_x, head_point_on_origin_y, head_point_on_origin_z;
 	double origin_on_flag_x, origin_on_flag_y, origin_on_flag_z;
 
+	double thigh_length_m, calf_length_m, ankle_length_m;
+
 private:
 
 	//forward_kinematics leg

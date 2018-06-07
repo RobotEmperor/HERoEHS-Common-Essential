@@ -68,17 +68,17 @@ Kinematics::Kinematics()
 	dh_link[1] = 0;
 	dh_link[2] = 0;
 	dh_link[3] = 0;
-	dh_link[4] = 0.225;
+	dh_link[4] = 0.240;
 	dh_link[5] = 0;
-	dh_link[6] = 0.135;
+	dh_link[6] = 0.127;
 
-	total_length_ = 0.585;
-	sensor_length_ = 0.135;
+	total_length_ = 0.607;
+	sensor_length_ = 0.127;
 
 	dh_link_d[0] = 0;
 	dh_link_d[1] = 0;
 	dh_link_d[2] = 0;
-	dh_link_d[3] = 0.225;
+	dh_link_d[3] = 0.240;
 	dh_link_d[4] = 0;
 	dh_link_d[5] = 0;
 	dh_link_d[6] = 0;
@@ -137,6 +137,10 @@ Kinematics::Kinematics()
 	origin_on_flag_x = 0;
 	origin_on_flag_y = 0;
 	origin_on_flag_z = 0;
+
+	thigh_length_m = 0.24;
+	calf_length_m  = 0.24;
+	ankle_length_m = 0.127;
 }
 Kinematics::~Kinematics()
 {
@@ -202,7 +206,7 @@ void Kinematics::FowardKnematics(double joint[7], std::string left_right)
 	H[0](1,0) = 0;
 	H[0](1,1) = 0;
 	H[0](1,2) = 1;
-	H[0](1,3) = -0.105;
+	H[0](1,3) = -0.09;
 
 	H[0](2,0) = -1;
 	H[0](2,1) = 0;
@@ -216,12 +220,12 @@ void Kinematics::FowardKnematics(double joint[7], std::string left_right)
 	//// foot frame 을 Global frame 과 일치 시킨다.
 	if(!left_right.compare("left")) // left
 	{
-		H[0](1,3) = 0.105;
+		H[0](1,3) = 0.09;
 		center_to_foot_transform_left_leg = H[0]*H[1]*H[2]*H[3]*H[4]*H[5]*H[6]*H[7];
 	}
 	else // right
 	{
-		H[0](1,3) = -0.105;
+		H[0](1,3) = -0.09;
 		center_to_foot_transform_right_leg = H[0]*H[1]*H[2]*H[3]*H[4]*H[5]*H[6]*H[7];
 	}
 }
@@ -293,7 +297,7 @@ void Kinematics::FowardKnematicsCenterToSensorRight(double joint[7])
 	H[0](1,0) = 0;
 	H[0](1,1) = 0;
 	H[0](1,2) = 1;
-	H[0](1,3) = -0.105;
+	H[0](1,3) = -0.09;
 
 	H[0](2,0) = -1;
 	H[0](2,1) = 0;
@@ -379,7 +383,7 @@ void Kinematics::FowardKnematicsCenterToSensorLeft(double joint[7])
 	H[0](1,0) = 0;
 	H[0](1,1) = 0;
 	H[0](1,2) = 1;
-	H[0](1,3) = 0.105;
+	H[0](1,3) = 0.09;
 
 	H[0](2,0) = -1;
 	H[0](2,1) = 0;
