@@ -76,7 +76,7 @@ Eigen::MatrixXd CalRad::cal_end_point_to_rad(Eigen::MatrixXd eP_) // end point 6
 		current_pose_change(5,2) = cal_end_point_tra_px    -> current_acc;
 		cal_end_point_tra_kamma -> current_time = 0;
 
-		ROS_INFO("Initialize && Change End Point Value");
+		//ROS_INFO("Initialize && Change End Point Value");
 	}
 
 	result_joint(0,0) = cal_end_point_tra_px -> fifth_order_traj_gen(current_pose_change(0,0), eP_(0,1), current_pose_change(0,1), eP_(0,3), current_pose_change(0,2), eP_(0,5), eP_(0,6), eP_(0,7));// initial pose, final pose, initial vel, final vel, initial acc, final acc, initial time, final time
